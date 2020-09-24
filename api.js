@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require("./user")
 
 router.get('/users', (req, res)=>{
+    debugger
     User.find({})
         .then(user => {
             res.send(user);
